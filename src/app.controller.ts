@@ -16,7 +16,7 @@ export class AppController {
   }
 
   @Post('/hello')
-  getHelloForPost(): string {
+  getHelloForPostAgain(): string {
     return "this is from post of another";
   }
 }
