@@ -9,4 +9,14 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Post()
+  getHelloForPost(): string {
+    return "this is from post";
+  }
+
+  @Post('/hello')
+  getHelloForPost(): string {
+    return "this is from post of another";
+  }
 }
